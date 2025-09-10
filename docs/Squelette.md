@@ -215,4 +215,10 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 ![Diagramme de séquence, terminerJeu](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/rdcu-terminerJeu.puml)
 
+## Diagramme de classe logicielles 
+
+Voici le diagramme de classes généré par la solution du projet basé sur le squelette Node.js + TypeScript.
+
+![Diagramme de classes logicielles](docs/modeles/App.puml)
+
 [README.md](../README.md)
