@@ -81,7 +81,6 @@ export class JeuRouter {
     res.status(error.code).json({ error: error.toString() });
   }
 
-
   /**
    * terminer
    */

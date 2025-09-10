@@ -1,1 +1,5 @@
-// Vous devez compléter ce fichier
+@startuml Diagramme du redemmarage du jeu
+title DSS pour le scénario //Redémarrer//
+skinparam Style strictuml
+":Joueur" -> ":Systeme" : redémarrerJeu()
+@enduml
