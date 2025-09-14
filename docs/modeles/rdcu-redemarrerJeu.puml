@@ -3,9 +3,9 @@ title RDCU pour redémarrerJeu
 skinparam Style strictuml
 
 participant ":JeuDeDes" as c
-participant "joueurs: Map<String,Joueur>" as jm
+participant "joueurs: Map<String, Joueur>" as jm
 
--> c : redémarrerJeu()
+-> c : redemarrerJeu()
 note right: Selon Contrôleur\n(JeuDesDés est \nl'objet racine)
 c -> jm : clear()
 note right: Selon Expert
