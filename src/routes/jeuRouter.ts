@@ -63,7 +63,7 @@ export class JeuRouter {
       // flash un message selon le résultat
       const key = resultatObj.somme == 7 ? 'win' : 'info';
       req.flash(key,
-        `Résultat pour ${nom}: ${resultatObj.v1} + ${resultatObj.v2} = ${resultatObj.somme}`);
+        `Résultat pour ${nom}: ${resultatObj.v1} + ${resultatObj.v2} + ${resultatObj.v3} = ${resultatObj.somme}`);
       res.status(200)
         .send({
           message: 'Success',
