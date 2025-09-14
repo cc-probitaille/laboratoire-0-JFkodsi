@@ -75,6 +75,7 @@ export class JeuDeDes {
     brasser() {
         this._d1.brasser();
         this._d2.brasser();
+        this._d3.brasser()
         const v1 = this._d1.valeur;
         const v2 = this._d2.valeur;
         const v3 = this._d3.valeur;
