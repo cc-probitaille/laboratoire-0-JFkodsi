@@ -16,5 +16,5 @@ class JeuDeDés
 ' associations
 Joueur "*" -down- "1" JeuDeDés : joue >
 Joueur "1" -right- "3" Dé : lance >
-JeuDeDés "1" -up- "*" Dé : inclut >
+JeuDeDés "1" -up- "3" Dé : inclut >
 @enduml
