@@ -26,7 +26,7 @@ note right : selon Expert
 
 c->d3 : brasser()
 note right : selon Expert
-c-> : v3 = valeur
+c->d3 : v3 = valeur
 note right : selon Expert
 
 c->j : incNbParties()
