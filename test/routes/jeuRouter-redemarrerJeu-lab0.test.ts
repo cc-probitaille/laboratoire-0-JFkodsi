@@ -13,14 +13,14 @@ describe("GET /api/v1/jeu/redemarrerJeu", () => {
   });
 
   it("devrait redémarrer le jeu avec succès (status 200, réponse JSON)", async () => {
-    const res = await request(app).get("/api/v1/jeu/redemarrerJeu");
+    const res = await request(app).get('/api/v1/jeu/redemarrerJeu');
 
     expect(res.status).toBe(200);
     expect(res.headers["content-type"]).toMatch(/json/);
   });
 
   it("devrait vider la liste des joueurs après redémarrage", async () => {
-    const res = await request(app).get("/api/v1/jeu/joueurs");
+    const res = await request(app).get('/api/v1/jeu/joueurs');
 
     expect(res.status).toBe(200);
     expect(res.body).toEqual([]);
@@ -28,13 +28,13 @@ describe("GET /api/v1/jeu/redemarrerJeu", () => {
 
   it("devrait aussi réussir même si aucun joueur n'existe déjà", async () => {
     // Aucun joueur n’a été recréé depuis le dernier test
-    const res = await request(app).get("/api/v1/jeu/redemarrerJeu");
+    const res = await request(app).get('/api/v1/jeu/redemarrerJeu');
 
     expect(res.status).toBe(200);
     expect(res.headers["content-type"]).toMatch(/json/);
 
     // Vérifier qu'il n'y a toujours pas de joueurs
-    const joueursRes = await request(app).get("/api/v1/jeu/joueurs");
+    const joueursRes = await request(app).get('/api/v1/jeu/joueurs');
     expect(joueursRes.status).toBe(200);
     expect(joueursRes.body).toEqual([]);
   });
