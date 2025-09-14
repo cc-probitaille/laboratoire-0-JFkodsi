@@ -1,5 +1,7 @@
 @startuml Diagramme du redemmarage du jeu
 title DSS pour le scénario //Redémarrer//
 skinparam Style strictuml
-":Joueur" -> ":Systeme" : redémarrerJeu()
+actor ":Joueur" as c
+participant ":Système" as s
+c -> s : redémarrerJeu()
 @enduml
