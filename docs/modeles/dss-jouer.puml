@@ -1,4 +1,4 @@
-@startuml
+@startuml DSS-jouer
 skinparam style strictuml
 skinparam defaultfontname Verdana
 skinparam sequence {
