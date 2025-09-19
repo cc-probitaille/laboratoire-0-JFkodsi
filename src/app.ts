@@ -64,11 +64,11 @@ class App {
     router.get('/stats', (req, res, next) => {
       const joueurs: Array<any> = JSON.parse(jeuRoutes.controleurJeu.joueurs);
 
-      const joueursAvecRatio = joueurs.map(joueurs => {
-        const ratio = joueurs.lancers > 0 ? joueurs.lancersGagnes / joueurs.lancers : 0;
+      const joueursAvecRatio = joueurs.map(joueur => {
+        const ratios = joueur.lancers > 0 ? joueur.lancersGagnes / joueur.lancers : 0;
         return {
-          ...joueurs, 
-          ratio
+          ...joueur, 
+          ratio : ratios || 0
         };
       });
 
